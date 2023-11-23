@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+//       *  
+//      * *
+//     * * *
+//    * * * *
+//   * * * * *
+    //sandbal program
+
+
+ 
+    let userInput = prompt("Enter the number of rows:");
+
+    // Convert user input to a number
+    let numberOfRows = parseInt(userInput);
+
+    let result = "";
+
+    for (let a = numberOfRows; a > 0; a--) {
+        // Add spaces before asterisks
+        for (let j = numberOfRows - a; j > 0; j--) {
+            result += " ";
+        }
+
+        // Add asterisks
+        for (let k = 1; k <= a; k++) {
+            result += "* ";
+        }
+        // Move to the next line
+        result += "\n";
+
+    }
+
+
+    for (let i = 1; i <= numberOfRows; i++) {
+
+        // Add spaces before asterisks
+        for (let j = numberOfRows - i; j > 0; j--) {
+            result += " ";
+        }
+
+        // Add asterisks
+        for (let k = 1; k <= i; k++) {
+            result += "* ";
+        }
+        // Move to the next line
+        result += "\n";
+
+    }
+
+
+
+    console.log(result);
+
+
+   </script>
+</body>
+
+</html>
